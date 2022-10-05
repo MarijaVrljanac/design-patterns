@@ -96,9 +96,9 @@
 //     {
 //         let netSalary = 0;
 
-//         employees.forEach(netSalary => {
-//             netSalary += this.employees.getSalary();
-//         });
+//         // for (let index = 0; index < employees.length; index++) {
+//         //     // netSalary += this.employees;
+//         // }
 
 //         return netSalary;
 //     }
@@ -106,15 +106,15 @@
 
 // //usage
 // // Prepare the employees
-// let jane = new Designer('Jane Doe', 15000, ['Designer, UX designer']);
+// // let jane = new Designer('Jane Doe', 15000, ['Designer, UX designer']);
 
 
-// // Add them to organization
-// const employees = new Designer[];
-// let organization = new Organization();
-// organization.addEmployee(john);
-// organization.addEmployee(jane);
+// // // Add them to organization
+// // const employees = new Designer[];
+// // let organization = new Organization();
+// // organization.addEmployee(john);
+// // organization.addEmployee(jane);
 
-// return "Net salaries: " . organization.getNetSalaries(); // Net Salaries: 27000
+// // return "Net salaries: " . organization.getNetSalaries(); // Net Salaries: 27000
 
 export {};

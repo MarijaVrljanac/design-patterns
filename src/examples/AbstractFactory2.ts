@@ -42,7 +42,7 @@ interface Player
     getDescription(): string;
 }
 
-class CentreForward implements Player
+class CentreForward implements Position
 {
     getDescription()
     {
@@ -51,7 +51,7 @@ class CentreForward implements Player
     }
 }
 
-class GoalkeeperPlayer implements Player
+class GoalkeeperPlayer implements Position
 {
     getDescription()
     {
