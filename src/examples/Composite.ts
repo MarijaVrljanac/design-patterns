@@ -30,12 +30,12 @@ class Project implements ToDoList{
         html += "</h1><ul>";
 
        
-
-        // this.toDos.forEach(ToDoList tdl in this.toDos){
-        //     html += "<li>";
-        //     html += tdl.getHTML();
-        //     html += "</li>";
-        // }
+        for (let index = 0; index < this.toDos.length; index++) {
+            html += "<li>";
+            html += this.toDos[index].getHTML();
+            html += "</li>";
+            
+        }
 
         html += "</ul>";
 

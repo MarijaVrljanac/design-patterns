@@ -8,6 +8,10 @@ import {} from "./examples/AbstractFactory";
 import {} from "./examples/Mediator";
 import {} from "./examples/Observer2";
 import {} from "./examples/Observer3";
+import {} from "./examples/AbstractFactory2";
+import {} from "./examples/Composite3";
+
+
 
 
 
@@ -47,7 +51,7 @@ function TextWithNumber({
   header?: (num: number) => ReactNode;
   children: (num: number) => ReactNode;
 }) {
-  const [state, stateSet] = React.useState<number>(1);
+  const [state, stateSet] = React.useState<number>(0);
 
   return(
     <div>
@@ -56,6 +60,7 @@ function TextWithNumber({
         {children(state)}
       </div>
       <div>
+        <br></br>
         <button onClick={() => stateSet(state + 1)}>Add</button>
       </div>
 
@@ -72,13 +77,13 @@ function List<ListItem>({
   render: (item: ListItem) => ReactNode
 }) {
   return (
-    <ul>
+    <div>
       {items.map((item, index) => (
-        <li key={index}>
+        <h6 key={index}>
           {render(item)}
-        </li>        
+        </h6>        
       ))}
-    </ul>
+    </div>
   )
 }
 
@@ -109,18 +114,19 @@ function App() {
        <Heading title="Design Patterns"></Heading>
        <HeadingWithContent><strong>TypeScript/React</strong></HeadingWithContent>
        <hr></hr>
-        <Container>Creational patterns</Container>
+        <Container><i><u>Creational patterns</u></i></Container>
        
         <List items={["Abstract Factory", "Builder"]} render={(item:string) => <div>{item.toUpperCase()}</div>}></List>
-        Structural patterns
+        <i><u>Structural patterns</u></i>
        
         <List items={["Adapter", "Composite"]} render={(item:string) => <div>{item.toUpperCase()}</div>}></List>
-        Behavioral patterns
+        <i><u>Behavioral patterns</u></i>
        
         <List items={["Mediator", "Observer"]} render={(item:string) => <div>{item.toUpperCase()}</div>}></List>
         {/* <MyHeader title="Header!"></MyHeader> */}
         <TextWithNumber>
-          {(num:number) => <div>Number of examples made: {num}</div>}
+        
+          {(num:number) => <div><hr></hr><br></br>Number of examples made: {num}</div>}
         </TextWithNumber>
     
     </div>

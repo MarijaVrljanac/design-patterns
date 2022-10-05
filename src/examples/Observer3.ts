@@ -63,7 +63,7 @@ class JobSeeker
     onJobPosted(job:NewJob)
     {
         // Do something with the job posting
-        console.log('Hi, ' + this.firstName + '! New job posted by '+job.company + ': ' + job.getTitle());
+        console.log('Hi, ' + this.firstName + '! We found a new job for you, posted by '+job.company + ': ' + job.getTitle());
         return 'Hi, ' + this.firstName + '! New job posted: ' + job.getTitle();
     }
 }

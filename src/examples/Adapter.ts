@@ -72,10 +72,10 @@ interface Sport {
   
   // Wrap a bird in a birdAdapter so that it
   // behaves like toy duck
-  const fifa = new Fifa(football);
+  const fantasy = new Fantasy(football);
   
   // toy duck behaving like a bird
-  fifa.league();
+  fantasy.league();
   
   export {};
   
