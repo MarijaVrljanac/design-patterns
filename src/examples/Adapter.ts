@@ -66,6 +66,9 @@ interface Sport {
   }
   
   const football = new Football();
+
+
+  //mali i veliki fudbal
   
   // Wrap a bird in a birdAdapter so that it
   // behaves like toy duck

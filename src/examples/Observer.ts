@@ -14,7 +14,7 @@ observable.subscribe({
     console.log(value);
   },
   complete: () => {
-    console.log("complete");
+    console.log("Complete!");
   },
 });
 

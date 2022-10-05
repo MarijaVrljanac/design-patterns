@@ -9,7 +9,7 @@ class ToDo implements ToDoList{
         this.text = text;
     }
     getHTML() {
-        console.log("Hi...");
+        console.log("List of things to do:");
         return this.text;
       }
 }
@@ -24,7 +24,7 @@ class Project implements ToDoList{
     }
 
     getHTML() {
-        console.log("Hi...");
+        console.log("Do the design pattern task");
         let html = "<h1>";
         html += this.title;
         html += "</h1><ul>";

@@ -4,8 +4,10 @@ import {} from "./examples/Adapter";
 import {} from "./examples/Builder";
 import {} from "./examples/Composite";
 import {} from "./examples/Observer";
-
-
+import {} from "./examples/AbstractFactory";
+import {} from "./examples/Mediator";
+import {} from "./examples/Observer2";
+import {} from "./examples/Observer3";
 
 
 
@@ -18,20 +20,20 @@ function Heading({title}: {title: string;}){
 
 function HeadingWithContent({children}: {children: ReactNode}): ReactElement{
   return(
-    <h3>{children}</h3>
+    <h2>{children}</h2>
   )
 }
 
 //Default props
 const defaultContainerProps = {
-  heading: <strong>Design patterns used:</strong>
+  heading: <strong>Types of Design Patterns:</strong>
 }
 
 type ContainerProps = {children: ReactNode} & typeof defaultContainerProps;
 
 function Container({heading, children}: ContainerProps) : ReactElement{
   return(
-    <div><h1>{heading}</h1>{children}</div>
+    <div><h4>{heading}</h4>{children}</div>
   );
 }
 
@@ -106,9 +108,16 @@ function App() {
     <div className="App">
        <Heading title="Design Patterns"></Heading>
        <HeadingWithContent><strong>TypeScript/React</strong></HeadingWithContent>
-        {/* <Container>AbstractFactory</Container> */}
+       <hr></hr>
+        <Container>Creational patterns</Container>
        
-        <List items={["Abstract Factory", "Adapter", "Builder", "Composite", "Mediator", "Observer"]} render={(item:string) => <div>{item.toUpperCase()}</div>}></List>
+        <List items={["Abstract Factory", "Builder"]} render={(item:string) => <div>{item.toUpperCase()}</div>}></List>
+        Structural patterns
+       
+        <List items={["Adapter", "Composite"]} render={(item:string) => <div>{item.toUpperCase()}</div>}></List>
+        Behavioral patterns
+       
+        <List items={["Mediator", "Observer"]} render={(item:string) => <div>{item.toUpperCase()}</div>}></List>
         {/* <MyHeader title="Header!"></MyHeader> */}
         <TextWithNumber>
           {(num:number) => <div>Number of examples made: {num}</div>}
