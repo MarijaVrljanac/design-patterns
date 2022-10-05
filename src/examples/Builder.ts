@@ -1,27 +1,51 @@
-class Resume {
+class Player {
     constructor(
-      public name: string,
-      public aboutMe?: string,
-      public skills?: string[]
+      public firstName: string,
+      public lastName: string,
+      public age: number,
+      public position: string,
+      public currentClub: string,
+      public internationalTeam?: string,
+      public height?: string,
+
     ) {}
   
-    addName(name: string) {
-      this.name = name;
+    addFirstName(firstName: string) {
+      this.firstName = firstName;
+    }
+
+    addLastName(lastName: string) {
+      this.lastName = lastName;
+    }
+
+    addAge(age:number){
+      this.age = age;
     }
   
-    addAboutMe(aboutMe: string) {
-      this.aboutMe = aboutMe;
+    addPosition(position: string) {
+      this.position = position;
+    }
+
+    addCurrentClub(currentClub: string) {
+      this.currentClub = currentClub;
+    }
+  
+    addInternationalTeam(internationalTeam: string) {
+      this.internationalTeam = internationalTeam;
+    }
+
+    addHeight(height: string) {
+      this.height = height;
       return this;
-    }
-  
-    addSkills(skills: string[]) {
-      this.skills = skills;
     }
   }
   
-  const myResume = new Resume("Marija Vrljanac")
-    .addAboutMe("Junior Software Engineer/IT Consultant")
-    .addSkills(["HTML", "CSS", "JS"]);
-  
+  const player1 = new Player("Reece", "James", 23,"Right-Back", "Chelsea", "England","180 cm");
+  const player2 = new Player("Dusan", "Vlahovic", 22, "Centre-Forward", "Juventus", "Serbia","190 cm");
+
+  console.log(player1);
+  console.log(player2);
+
+
   export {};
   

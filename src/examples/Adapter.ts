@@ -1,39 +1,78 @@
-interface Bird {
-    fly(): void;
-    makeSound(): void;
+interface Sport {
+    numberOfPlayersOnATeam(): number;
+    object(): void;
+    matchDuration(): void;
+    championships(): void;
   }
   
-  class Sparrow implements Bird {
-    fly() {
-      console.log("Flying...");
+  class Football implements Sport {
+    numberOfPlayersOnATeam(){
+      return 11;
     }
-  
-    makeSound() {
-      console.log("Chirp Chirp");
+    object(){
+      console.log("Ball");
     }
+    matchDuration(){
+      console.log("90 minutes");
+    } 
+    championships(){
+      console.log("UEFA Champions League");
+    }
+  }
+
+  class Basketball implements Sport {
+    numberOfPlayersOnATeam(){
+      return 5;
+    }
+    object(){
+      console.log("Ball");
+    }
+    matchDuration(){
+      console.log("4x10 minutes");
+    }
+    championships(): void {
+      console.log("ABA league");
+    }   
   }
   
   /** Target */
-  interface ToyDuck {
-    squeak(): void;
+  interface VideoGame {
+    newestRelease(): void;
   }
   
-  class BirdAdapter implements ToyDuck {
-    constructor(private bird: Bird) {}
+  class Fifa implements VideoGame {
+    constructor(private sport: Sport) {}
   
-    squeak() {
-      this.bird.makeSound();
+    league() {
+      this.sport.championships();
+    }
+
+    newestRelease(){
+      console.log("FIFA 23");
+    }
+  }
+
+
+  class Fantasy implements VideoGame {
+    constructor(private sport: Sport) {}
+  
+    league() {
+      console.log("Premier league");
+    }
+
+    newestRelease(){
+      console.log("");
     }
   }
   
-  const sparrow = new Sparrow();
+  const football = new Football();
   
   // Wrap a bird in a birdAdapter so that it
   // behaves like toy duck
-  const birdAdapter = new BirdAdapter(sparrow);
+  const fifa = new Fifa(football);
   
   // toy duck behaving like a bird
-  birdAdapter.squeak();
+  fifa.league();
   
   export {};
   

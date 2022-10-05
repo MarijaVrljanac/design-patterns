@@ -43,4 +43,7 @@ class Project implements ToDoList{
       }
 }
 
+const toDo = new ToDo("Project1");
+toDo.getHTML();
+
 export default [];
