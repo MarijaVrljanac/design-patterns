@@ -47,6 +47,8 @@ class Player {
 //usage
 const manager = new FootballClub();
 
+console.log("***Mediator:***");
+
 const tadic = new Player('Dusan','Tadic', manager);
 const mitrovic = new Player('Aleksandar', 'Mitrovic', manager);
 

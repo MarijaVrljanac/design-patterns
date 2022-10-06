@@ -43,6 +43,8 @@ class User {
 //usage
 const mediator = new ChatRoom();
 
+console.log("***Mediator:***");
+
 const uros = new User('Uros', mediator);
 const milos = new User('Milos', mediator);
 

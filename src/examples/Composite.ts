@@ -43,6 +43,8 @@ class Project implements ToDoList{
       }
 }
 
+console.log("***Composite:***");
+
 const toDo = new ToDo("Project1");
 toDo.getHTML();
 

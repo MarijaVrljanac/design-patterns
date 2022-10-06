@@ -112,6 +112,8 @@ class ConcreteObserverB implements Observer {
  * The client code.
  */
 
+ console.log("***Observer:***");
+
 const subject = new ConcreteSubject();
 
 const observer1 = new ConcreteObserverA();

@@ -115,6 +115,8 @@
 // // organization.addEmployee(john);
 // // organization.addEmployee(jane);
 
+// console.log("***Composite:***");
+
 // // return "Net salaries: " . organization.getNetSalaries(); // Net Salaries: 27000
 
 export {};

@@ -48,6 +48,8 @@ class Player {
 
   player3.addHeight("178 cm");
 
+  console.log("***Builder:***");
+
   console.log(player1);
   console.log(player2);
   console.log(player3);

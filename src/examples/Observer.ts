@@ -9,6 +9,8 @@ const observable = new Observable((subscriber) => {
   }, 1000);
 });
 
+console.log("***Observer:***");
+
 observable.subscribe({
   next: (value) => {
     console.log(value);

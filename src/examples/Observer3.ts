@@ -68,6 +68,8 @@ class JobSeeker
     }
 }
 
+console.log("***Observer:***");
+
 const jobseeker1 = new JobSeeker("Pera", "Peric", "Junior IT Consultant", "ETF");
 const job1 = new NewJob("PRODYNA", "Junior IT Conusltant", 
 "An IT consultant is a technical expert who can creatively solve issues." +

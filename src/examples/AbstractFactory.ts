@@ -99,6 +99,7 @@ const ironFactory = new IronDoorFactory();
 door = ironFactory.makeDoor();
 expert = ironFactory.makeFittingExpert();
 
+console.log("***Abstract factory:***");
 door.getDescription();  // Output: I am an iron door
 expert.getDescription(); // Output: I can only fit iron doors
 

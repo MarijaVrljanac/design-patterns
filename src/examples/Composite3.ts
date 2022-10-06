@@ -1,3 +1,5 @@
+import { lastValueFrom } from "rxjs";
+
 namespace CompositePattern {
     export interface Component {
         operation(): void;
@@ -41,6 +43,13 @@ namespace CompositePattern {
             console.log("`operation` of Leaf", this.s, " is called.");
         }
     }
+
+    
+    console.log("***Composite***");
+    let leaf = new Leaf("Green");
+    leaf.operation();
 }
+
+
 
 export {};

@@ -65,16 +65,17 @@ interface Sport {
     }
   }
   
+  console.log("***Adapter:***");
+
   const football = new Football();
 
 
   //mali i veliki fudbal
   
-  // Wrap a bird in a birdAdapter so that it
-  // behaves like toy duck
+
   const fantasy = new Fantasy(football);
-  
-  // toy duck behaving like a bird
+
+
   fantasy.league();
   
   export {};
