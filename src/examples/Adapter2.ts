@@ -56,6 +56,8 @@ class WildDogAdapter implements Lion
     }
 }
 
+console.log("***Adapter:***");
+
 let wildDog = new WildDog();
 let wildDogAdapter = new WildDogAdapter(wildDog);
 

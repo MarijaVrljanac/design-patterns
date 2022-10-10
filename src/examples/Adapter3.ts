@@ -17,6 +17,9 @@ namespace AdapterPattern {
             adaptee.method();
         }
     }
+
+    console.log("***Adapter:***");
+
 }
 
 export {};

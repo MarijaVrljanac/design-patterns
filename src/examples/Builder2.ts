@@ -34,7 +34,7 @@ class Order {
     }
   }
 
-
+  console.log("***Builder:***");
   
   const order1 = new Order("Marija", "Vrljanac", ["Cheeseburger"], 60123456, "1234-5678-9123", ["French fries"]);
   const order2 = new Order("Uros", "Miric", ["DoubleCheesburger", "Soup"], 123545,"1235-8794-4723");

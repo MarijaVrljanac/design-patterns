@@ -69,7 +69,7 @@ namespace AbstractFactoryPattern {
             console.log(this.abstractProductB.methodB());
         }
     }
-
+    console.log("***Abstract factory:***");
  }
 
  export {};

@@ -69,6 +69,7 @@ namespace AbstractFactoryPattern {
             console.log(this.abstractProductB.methodB());
         }
     }
+    console.log("***Mediator:***");
 
  }
 

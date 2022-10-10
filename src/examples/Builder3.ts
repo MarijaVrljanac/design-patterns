@@ -63,6 +63,8 @@ class BurgerBuilder
     }
 }
 
+console.log("***Builder:***");
+
 let burger = (new BurgerBuilder(14))
                     .addPepperoni()
                     .addLettuce()
