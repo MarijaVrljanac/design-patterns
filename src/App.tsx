@@ -1,18 +1,23 @@
 import React, { useState, ReactElement, ReactNode } from 'react';
 import './App.css';
 import {} from "./examples/Adapter";
+import {} from "./examples/Adapter2";
+import {} from "./examples/Adapter3";
 import {} from "./examples/Builder";
+import {} from "./examples/Builder2";
+import {} from "./examples/Builder3";
 import {} from "./examples/Composite";
+import {} from "./examples/Composite2";
+import {} from "./examples/Composite3";
 import {} from "./examples/Observer";
-import {} from "./examples/AbstractFactory";
-import {} from "./examples/Mediator";
 import {} from "./examples/Observer2";
 import {} from "./examples/Observer3";
+import {} from "./examples/AbstractFactory";
 import {} from "./examples/AbstractFactory2";
-import {} from "./examples/Composite3";
-
-
-
+import {} from "./examples/AbstractFactory3";
+import {} from "./examples/Mediator";
+import {} from "./examples/Mediator2";
+import {} from "./examples/Mediator3";
 
 
 //Conventional props
